@@ -133,7 +133,6 @@ const logOutUser = async(req, res)=> {
         }
         
         const user = await UsersModel.findOne({ where: { refresh_token: refreshToken } });
-        console.log(refreshToken);
         
         if (!user) {
             return res
