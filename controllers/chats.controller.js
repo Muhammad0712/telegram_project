@@ -5,7 +5,7 @@ const ChatsModel = require('../models/chats.model');
 const addNewChat = async(req, res) => {
     try {
         const newChat = await ChatsModel.create({...req.body});
-        res.status(201).send({message: "User created succesfully!", newChat});
+        res.status(201).send({message: "Chat created succesfully!", newChat});
     } catch (error) {
         errorHandler(error, res);
     }
