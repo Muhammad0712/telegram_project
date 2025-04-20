@@ -2,7 +2,7 @@ const sequelize = require("../config/db");
 
 const { DataTypes } = require("sequelize");
 
-const MessageEdits = sequelize.define("message_edits", {
+const Messages = sequelize.define("messages", {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -40,4 +40,4 @@ const MessageEdits = sequelize.define("message_edits", {
 
 );
 
-module.exports = MessageEdits;
+module.exports = Messages;
